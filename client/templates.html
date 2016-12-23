@@ -1,0 +1,16 @@
+<template name="firstTemplate">
+    {{#navbar}}
+        {{> navbutton}}
+    {{/navbar}}
+    <svg height="200" width="100%" id="shapes">
+        {{> one}}
+    </svg>
+    {{{rawInsert}}}
+</template>
+
+<template name="one">
+    {{#each svgShapes}}
+    <circle r="40" cx="{{x}}" cy="{{y}}" stroke="{{randColor}}" stroke-width="3" fill="{{randColor}}" />
+    {{/each}}
+</template>
+

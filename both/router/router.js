@@ -1,13 +1,13 @@
 
 Router.configure({
-    layout: 'routeexample'
+   layout: 'route-example'
 });
 
-Route.map(function () {
-    this.route('thing1',{
-        path: '/'
-    });
-    this.route('thing2', {
+Router.map(function(){
+   this.route('thing1', {
+       path: '/'
+   });
+   this.route('thing2',{
        path: '/second'
-    });
+   });
 });

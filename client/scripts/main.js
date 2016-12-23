@@ -14,9 +14,15 @@ Template.hello.helpers({
   },
 });
 
+// Template.hello.events({
+//   'click button'(event, instance) {
+//     // increment the counter when button is clicked
+//     instance.counter.set(instance.counter.get() + 1);
+//   },
+// });
+
 Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
-  },
+  'click button' : function(){
+      Router.current().route.getName() == 'thing1' ? Router.go('thing2') : Router.go('thing1');
+  }
 });

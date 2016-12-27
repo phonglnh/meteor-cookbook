@@ -53,3 +53,4 @@ Template.registerHelper('randColor',function () {
 Template.registerHelper('shapeCount', function () {
     return Shapes.find().count();
 });
+

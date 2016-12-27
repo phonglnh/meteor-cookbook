@@ -26,3 +26,5 @@ Template.hello.events({
       Router.current().route.getName() == 'thing1' ? Router.go('thing2') : Router.go('thing1');
   }
 });
+
+
